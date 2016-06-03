@@ -52,9 +52,8 @@ router.post('/', function(req, res, next) {
 		Result : '?'
 	};
 
-	var model = './node_modules/node-weka/test/gradCafe.arff';
 
-	weka.classify(data, model, testData, options, function (err, result) {
+	weka.classify(data, testData, options, function (err, result) {
 
 	  //console.log(result); //{ predicted: 'yes', prediction: '1' }
 	  if (err){
