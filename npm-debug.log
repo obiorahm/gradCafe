@@ -1,73 +1,37 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node',
-1 verbose cli   '/usr/local/bin/npm',
-1 verbose cli   'owner',
-1 verbose cli   'ls',
-1 verbose cli   'gradcafe' ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
 2 info using npm@2.14.12
 3 info using node@v4.3.1
-4 silly mapToRegistry name gradcafe
-5 silly mapToRegistry using default registry
-6 silly mapToRegistry registry https://registry.npmjs.org/
-7 silly mapToRegistry uri https://registry.npmjs.org/gradcafe
-8 verbose request uri https://registry.npmjs.org/gradcafe
-9 verbose request no auth needed
-10 info attempt registry request try #1 at 2:53:14 PM
-11 verbose request id 8da8787b2eac19f4
-12 http request GET https://registry.npmjs.org/gradcafe
-13 http 404 https://registry.npmjs.org/gradcafe
-14 verbose headers { 'content-type': 'application/json',
-14 verbose headers   'cache-control': 'max-age=0',
-14 verbose headers   'content-length': '2',
-14 verbose headers   'accept-ranges': 'bytes',
-14 verbose headers   date: 'Fri, 03 Jun 2016 19:53:10 GMT',
-14 verbose headers   via: '1.1 varnish',
-14 verbose headers   age: '0',
-14 verbose headers   connection: 'keep-alive',
-14 verbose headers   'x-served-by': 'cache-iad2135-IAD',
-14 verbose headers   'x-cache': 'MISS',
-14 verbose headers   'x-cache-hits': '0',
-14 verbose headers   'x-timer': 'S1464983590.508218,VS0,VE102',
-14 verbose headers   vary: 'Accept-Encoding' }
-15 silly get cb [ 404,
-15 silly get   { 'content-type': 'application/json',
-15 silly get     'cache-control': 'max-age=0',
-15 silly get     'content-length': '2',
-15 silly get     'accept-ranges': 'bytes',
-15 silly get     date: 'Fri, 03 Jun 2016 19:53:10 GMT',
-15 silly get     via: '1.1 varnish',
-15 silly get     age: '0',
-15 silly get     connection: 'keep-alive',
-15 silly get     'x-served-by': 'cache-iad2135-IAD',
-15 silly get     'x-cache': 'MISS',
-15 silly get     'x-cache-hits': '0',
-15 silly get     'x-timer': 'S1464983590.508218,VS0,VE102',
-15 silly get     vary: 'Accept-Encoding' } ]
-16 error owner ls Couldn't get owner data gradcafe
-17 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/gradcafe
-17 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
-17 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
-17 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
-17 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
-17 verbose stack     at emitTwo (events.js:87:13)
-17 verbose stack     at Request.emit (events.js:172:7)
-17 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
-17 verbose stack     at emitOne (events.js:82:20)
-17 verbose stack     at Request.emit (events.js:169:7)
-17 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
-18 verbose statusCode 404
-19 verbose pkgid gradcafe
-20 verbose cwd /Users/mmachiobiorah/gradCafe
-21 error Darwin 15.3.0
-22 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "owner" "ls" "gradcafe"
-23 error node v4.3.1
-24 error npm  v2.14.12
-25 error code E404
-26 error 404 Registry returned 404 for GET on https://registry.npmjs.org/gradcafe
-26 error 404
-26 error 404 'gradcafe' is not in the npm registry.
-26 error 404 You should bug the author to publish it (or use the name yourself!)
-26 error 404
-26 error 404 Note that you can also install from a
-26 error 404 tarball, folder, http url, or git url.
-27 verbose exit [ 1, true ]
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info prestart gradCafe@0.0.0
+6 info start gradCafe@0.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info gradCafe@0.0.0 Failed to exec start script
+9 verbose stack Error: gradCafe@0.0.0 start: `node ./bin/www`
+9 verbose stack Exit status 1
+9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at EventEmitter.emit (events.js:172:7)
+9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at ChildProcess.emit (events.js:172:7)
+9 verbose stack     at maybeClose (internal/child_process.js:821:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+10 verbose pkgid gradCafe@0.0.0
+11 verbose cwd /Users/mmachiobiorah/gradCafe
+12 error Darwin 15.3.0
+13 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+14 error node v4.3.1
+15 error npm  v2.14.12
+16 error code ELIFECYCLE
+17 error gradCafe@0.0.0 start: `node ./bin/www`
+17 error Exit status 1
+18 error Failed at the gradCafe@0.0.0 start script 'node ./bin/www'.
+18 error This is most likely a problem with the gradCafe package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     node ./bin/www
+18 error You can get their info via:
+18 error     npm owner ls gradCafe
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]
