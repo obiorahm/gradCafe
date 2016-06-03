@@ -2,6 +2,7 @@
   "name": "gradCafe",
   "version": "0.0.0",
   "private": true,
+  "main": "web.js", 
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -14,5 +15,8 @@
     "less-middleware": "1.0.x",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
+  },
+"engines": {
+    "node": "4.3.2"
   }
 }
