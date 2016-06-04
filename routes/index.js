@@ -39,7 +39,7 @@ router.post('/', function(req, res, next) {
 	  windy      : 'TRUE',
 	play       : 'no' // last is class attribute */
 	//};
-	console.log("The Degree_Type" +req.body);
+	//console.log("The Degree_Type" +req.body);
 	console.log("The Degree_Type" +req.body.GPA);
 	console.log("The Status" +req.body.status);	
 	var testData = {
