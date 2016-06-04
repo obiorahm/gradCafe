@@ -2,63 +2,67 @@
 <html>
   <head>
     <title>{{ title }}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/my_style.css' />
+    <link rel='stylesheet' href='/stylesheets/custom.css' />
+
   </head>
   <body>
     <h1>{{ title }}</h1>
-    <p>Welcome to {{ label }}</p>
+    <p>Welcome, Enter your grades and press predict!</p>
     <form action="/" method="post">
-	    <div>
-	    	<div>
-	           <label for="GPA">GPA</label>
-	            <input type="text" id="GPA" name="GPA" value=0.0 />    	
-	        </div>
-	    	<div>
-	           <label for="writing">Writing GRE</label>
-	            <input type="text" id="writing" name="GRE" value=0.0 />    	
+	    <div = class="container">
+	    	<div class="cont">
+	           	<label for="GPA" class="lbl">GPA</label >
+	            	<input type="text" id="GPA" name="GPA" value=0.0 class="inpt" />    	
+	        </div >
+	    	<div class="cont">
+	           		<label for="writing" class="lbl">Writing GRE</label>
+	            	<input type="text" id="writing" name="GRE" value=0.0 class="inpt" />    	
 	        </div>        
-	    	<div>
-	           	<label for="status">Status</label>     		
-	    		<select id="status" name="status">
-
+	    	<div class="cont">
+	           		<label for="status" class="lbl">Status</label>   	
+	    			<select id="status" name="status" class="inpts">
 					  <option value="I" name="I">International</option>
 					  <option value="A" name="A">American</option>
 					  <option value="U" name="U">Undergraduate-American</option>
 					  <option value="O" name="O">Other</option>
-				</select>
+					</select>
 	    	</div>
-			<div>
-	           	<label for="d_type">Degree Type</label>     		
-	    		<select id="d_type" name="d_type">
+			<div class="cont">
+		           	<label for="d_type" class="lbl">Degree Type</label>     		
+		    		<select id="d_type" name="d_type" class="inpts">
 
-					  <option value="Phd">Phd</option>
-					  <option value="Masters">Masters</option>
-				</select>
+						  <option value="Phd">Phd</option>
+						  <option value="Masters">Masters</option>
+					</select>
 	    	</div>	    	
-	    	<div>
-	           	<label for="quant">Quantitative GRE</label>     		
-	    		<select id-"quant" name="quant">
+	    	<div class="cont">
+	           		<label for="quant" class="lbl" >Quantitative GRE</label>     		
+		    		<select id-"quant" name="quant" class="inpts">
 
-					  <option value="130" name="q_130">130</option>
-					  <option value="140" name="q_140">140</option>
-					  <option value="150" name="q_150">150</option>
-					  <option value="160" name="q_160">160</option>
-					<option value="170" name="q_170">170</option>			
-				</select>
+						  <option value="130" name="q_130">130</option>
+						  <option value="140" name="q_140">140</option>
+						  <option value="150" name="q_150">150</option>
+						  <option value="160" name="q_160">160</option>
+						<option value="170" name="q_170">170</option>			
+					</select>
 	    	</div> 
-	    	<div>
-	           	<label for="verbal">Verbal GRE</label>     		
-	    		<select id-"verbal" name="verbal">
+	    	<div class="cont">
+	           		<label for="verbal" class="lbl">Verbal GRE</label>  		
+		    		<select id-"verbal" name="verbal" class="inpts">
 
-					  <option value="130" name="v_130">130</option>
-					  <option value="140" name="v_140">140</option>
-					  <option value="150" name="v_150">150</option>
-					  <option value="160" name="v_160">160</option>
-					<option value="170" name="v_170">170</option>			
-				</select>
+						  <option value="130" name="v_130">130</option>
+						  <option value="140" name="v_140">140</option>
+						  <option value="150" name="v_150">150</option>
+						  <option value="160" name="v_160">160</option>
+						<option value="170" name="v_170">170</option>			
+					</select>
 	    	</div>    	    	   	
+	    	<div class="cont">
+				<input type="submit" value="predict" class="lbl">
+	    	</div>
 	    	<div>
-				<input type="submit" value="predict">
+	    		<p>Most people with your profile are {{ label }}</p>
 	    	</div>
 	    </div>
 	</form>

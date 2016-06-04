@@ -1,1 +1,21 @@
-.
+.lbl{
+	width: 8rem;
+		float: left;
+}
+
+.inpt{
+	width: 10rem;
+}
+
+.inpts{
+	width: 10.5rem;
+}
+
+.container{
+	width: 100rem;
+}
+
+.cont{
+	width: 25rem;
+	margin-bottom: 0.5rem;
+}

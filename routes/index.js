@@ -6,7 +6,7 @@
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-	  res.render('index', { title: 'Express' });
+	  res.render('index', { title: 'Predict Admissions' });
 	});
 
 router.post('/', function(req, res, next) {
@@ -25,21 +25,6 @@ router.post('/', function(req, res, next) {
 	  	'params'    : ''
 	};
 
-	/*var testData = {
-		GPA	: 3.75,
-		Writing_GRE	: 3.5,
-		Status: 'I',
-		Degree_Type	: 'Phd',
-		verbal_GRE	: 142,
-		quant_GRE	: 164,
-		Result : '?'
-/*	  outlook    : 	'sunny',
-	  temperature: 30,
-	  humidity   : 2,
-	  windy      : 'TRUE',
-	play       : 'no' // last is class attribute */
-	//};
-	//console.log("The Degree_Type" +req.body);
 	console.log("The Degree_Type" +req.body.GPA);
 	console.log("The Status" +req.body.status);	
 	var testData = {
@@ -59,7 +44,7 @@ router.post('/', function(req, res, next) {
 	  if (err){
 	  	console.error(err)
 	  } 
-	  res.render('index', { title: 'Express',
+	  res.render('index', { title: 'Predict Admissions',
 	  						label: result.predicted });
 
 
